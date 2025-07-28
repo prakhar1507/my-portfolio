@@ -54,9 +54,10 @@ const coursework = [
   'Data Structures and Algorithms',
   'Database Management System',
   'Object Oriented Programming',
+  'Operating Systems',
+  'Computer Networks',
   'Statistics',
   'Discrete Mathematics',
-  'Operating System',
 ];
 
 const competencies = [
