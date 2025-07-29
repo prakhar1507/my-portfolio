@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
   const links = [
     { id: 1, link: 'home' },
     { id: 2, link: 'about' },
@@ -18,20 +19,29 @@ const Navbar = () => {
       <h1 className="text-2xl font-bold text-teal-400">Prakhar Srivastava</h1>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex">
+      <ul className="hidden md:flex items-center gap-4">
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-300 hover:text-teal-400 duration-200"
+            className="px-2 cursor-pointer capitalize font-medium text-gray-300 hover:text-teal-400 duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}
             </Link>
           </li>
         ))}
+        <li>
+          <a
+            href="/resume.pdf"
+            download="Prakhar_Srivastava_Resume.pdf"
+            className="border border-teal-400 px-4 py-1 rounded text-teal-400 hover:bg-teal-400 hover:text-black transition-all font-mono text-sm"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
 
-      {/* Hamburger Menu */}
+      {/* Hamburger Menu Icon */}
       <div onClick={() => setNav(!nav)} className="md:hidden z-10 cursor-pointer text-gray-300">
         {nav ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
@@ -54,6 +64,15 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          <li className="py-4">
+            <a
+              href="/resume.pdf"
+              download="Prakhar_Srivastava_Resume.pdf"
+              className="border border-teal-400 px-4 py-2 rounded text-teal-400 hover:bg-teal-400 hover:text-black transition-all font-mono text-sm"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       )}
     </div>

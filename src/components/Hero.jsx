@@ -43,8 +43,7 @@ const Hero = () => {
 
         {/* Description */}
         <p className="text-gray-400 text-sm sm:text-base md:text-lg mt-6 mx-auto max-w-xl leading-relaxed">
-          Graduated Computer Science student focused on Data Science, Automation, and Web Development.
-          Passionate about solving real-world problems using meaningful technology.
+          Graduated Computer Science student passionate about solving real-world problems through software development. Strong focus on data handling, analysis, and automation, with a deep interest in building data-driven solutions that create meaningful impact.
         </p>
 
         {/* Buttons */}
@@ -57,7 +56,9 @@ const Hero = () => {
           </a>
           <a
             href="/resume.pdf"
-            download
+            download="Prakhar_Srivastava_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-teal-400 px-6 py-2 rounded text-teal-400 hover:bg-teal-400 hover:text-black font-semibold text-sm sm:text-base"
           >
             Download Resume
@@ -76,18 +77,7 @@ const Hero = () => {
             <FaEnvelope className="hover:text-teal-400" />
           </a>
         </div>
-        {/* Scroll Down Icon */}
-<div className="mt-12 flex justify-center animate-bounce">
-  <Link
-    to="about"
-    smooth={true}
-    duration={500}
-    className="cursor-pointer text-teal-400 hover:text-teal-300 text-2xl"
-  >
-    <FaChevronDown />
-  </Link>
-</div>
-
+        
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
+import { motion } from 'framer-motion';
 
 const projects = [
   {
@@ -39,8 +40,12 @@ const Projects = () => {
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
               className="bg-[#0f172a] rounded-xl border border-gray-700 hover:border-teal-400 transition-all p-6 flex flex-col shadow-lg"
             >
               <div className="flex flex-col flex-grow">
@@ -86,7 +91,7 @@ const Projects = () => {
                   </a>
                 )}
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

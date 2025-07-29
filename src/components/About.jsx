@@ -10,7 +10,7 @@ const About = () => {
         </h2>
 
         <p className="text-gray-400 text-sm sm:text-base max-w-3xl mx-auto leading-relaxed tracking-wide">
-          I'm a final-year Computer Science student at JUET Guna, passionate about data, automation, and solving real-world problems using technology. I specialize in building intelligent tools, streamlining workflows, and developing web apps that add real value.
+          I'm a Graduated Computer Science student from Jaypee university of Engineering and Technology, Guna passionate about data, automation, and solving real-world problems using technology. I specialize in building intelligent tools, streamlining workflows, and developing web apps that add real value.
         </p>
 
         {/* Education Heading */}

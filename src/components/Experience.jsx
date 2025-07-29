@@ -1,13 +1,13 @@
 import React from 'react';
-import { FaBriefcase, FaUsers, FaAward } from 'react-icons/fa';
+import { FaBriefcase, FaUsers } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
   const timelineItems = [
     {
       icon: <FaBriefcase className="text-teal-400 text-xl" />,
       title: 'Data Analyst Intern',
-      org: 'Careervira Pvt Ltd',
-      location: 'Remote',
+      org: 'Careervira AI',
       duration: 'Feb 2024 – July 2024',
       points: [
         'Leads Prioritization Project (Python, Pygsheets, Playwright): Utilized Playwright to automate the collection of relevant LinkedIn post data, fed into Hugging Face language models for intent classification. Achieved 75% reduction in lead generation time with 85% accuracy.',
@@ -55,7 +55,14 @@ const Experience = () => {
 
         <div className="relative border-l border-teal-400 ml-4">
           {timelineItems.map((item, index) => (
-            <div key={index} className="mb-12 ml-6">
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+              className="mb-12 ml-6"
+            >
               <div className="absolute -left-5 bg-[#0a192f] p-2 rounded-full border border-teal-400">
                 {item.icon}
               </div>
@@ -74,7 +81,7 @@ const Experience = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
