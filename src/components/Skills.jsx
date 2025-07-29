@@ -9,6 +9,9 @@ import { FaAws, FaChartBar , FaFilePowerpoint ,FaCode} from 'react-icons/fa';
 import { VscAzure } from 'react-icons/vsc';
 import { TbAutomation } from "react-icons/tb";
 import { GiVendingMachine } from "react-icons/gi";
+import { GiAbstract020 } from "react-icons/gi";
+import { BiSolidReport } from "react-icons/bi";
+
 
 
 const skills = {
@@ -22,6 +25,7 @@ const skills = {
   'Automation / Scraping': [
     { name: 'Playwright', icon: <TbAutomation /> },
     { name: 'Scrapy', icon: <SiScrapy /> },
+    { name: 'BeautifulSoup', icon: <GiAbstract020 /> },
   ],
   'Frameworks & Packages': [
     { name: 'NumPy', icon: <SiNumpy /> },
@@ -34,7 +38,7 @@ const skills = {
     { name: 'Flask', icon: <SiFlask /> },
   ],
   'BI & Data Tools': [
-    // { name: 'Power BI', icon: <SiPowerbi /> },
+    { name: 'Power BI', icon: <BiSolidReport /> },
     { name: 'Tableau', icon: <SiTableau /> },
     { name: 'Google Sheets', icon: <SiGooglesheets /> },
   ],
