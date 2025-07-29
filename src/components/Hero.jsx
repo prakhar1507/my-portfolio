@@ -1,7 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
-import { FaChevronDown } from 'react-icons/fa';
-import { Link } from 'react-scroll';
+// import { FaChevronDown } from 'react-icons/fa';
+// import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (

@@ -1,9 +1,9 @@
 import {
   SiPython, SiCplusplus, SiHtml5, SiCss3, SiMysql, SiNumpy,
-  SiPandas, SiScikitlearn, SiMatplotlib, SiSeaborn, SiPlotly,
-  SiStreamlit, SiFlask, SiPowerbi, SiTableau, SiGooglesheets,
-  SiPlaywright, SiScrapy, SiVisualstudiocode, SiJupyter,
-  SiGithub, SiGit, SiMicrosoftoffice, SiKaggle, SiAmazonaws, SiMicrosoftazure
+  SiPandas,
+  SiStreamlit, SiFlask, SiTableau, SiGooglesheets,
+  SiScrapy, SiJupyter,
+  SiGithub, SiGit,SiKaggle
 } from 'react-icons/si';
 import { FaAws, FaChartBar , FaFilePowerpoint ,FaCode} from 'react-icons/fa';
 import { VscAzure } from 'react-icons/vsc';
